@@ -1,10 +1,9 @@
 import { buildProduct } from "./productListView.js"
 import { products } from "./productListModel.js"
 
-export const productListController = () => {
+export const productListController = (productList) => {
     products.forEach( product => {
         const newProduct = buildProduct(product)
-        const target = document.querySelector('#products')
-        target.appendChild(newProduct)
+        productList.appendChild(newProduct)
     })
 }

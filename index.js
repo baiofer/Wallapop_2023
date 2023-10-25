@@ -1,5 +1,6 @@
 import { productListController } from './productList/productListController.js'
 
-productListController()
+const target = document.querySelector('#products')
+productListController(target)
 
 
