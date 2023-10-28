@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de registro</title>
+    <link rel="stylesheet" href="./notofications/notifications.css">
+    <link rel="stylesheet" href="./signup/signup.css">
+</head>
+<body>
+    <h1>Registro</h1>
+
+    <section id="notifications"></section>
+    <!--
+    <section id="loader"></section>
+    -->
+    
+
+    <form id="signup">
+        <label for="email">Email</label>
+        <input type="email" id="email" required autocomplete=".com">
+        <br>
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" required minlength="6"> 
+        <br>
+        <label for="password-confirm">Repita Contraseña</label>
+        <input type="password" id="password-confirm" required minlength="6">
+        <br>
+        <button type="'submit">Crear usuario</button>
+    </form>
+
+    <script type="module" src="./signup/index.js"></script>
+
+</body>
+</html>
