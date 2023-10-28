@@ -7,9 +7,12 @@ export const productListController = async (productList) => {
     productList.innerHTML = ''
     let products = []
     try {
+        dispatchEvent('startLoadingProducts', null, productList)
         products = await getProducts()
     } catch (error) {
         dispatchEvent('productsLoaded', { type: 'error', message: 'Error al cargar los productos.' }, tweetList)
+    } finally {
+        dispatchEvent('finishLoadingProducts', null, productList)
     }
     
     if (products.length === 0) {

@@ -13,7 +13,7 @@ const submitLogin = async (loginForm) => {
     const { email, password } = getLoginData(loginForm)
 
     try {
-        //dispatchEvent('startLogin', null, loginForm)
+        dispatchEvent('startLogin', null, loginForm)
         const token = await loginUser(email, password)
         localStorage.setItem('token', token)
         dispatchEvent('userLogged', { type: 'success', message: 'Acceso correcto'}, loginForm)
@@ -21,7 +21,7 @@ const submitLogin = async (loginForm) => {
     } catch (error) {
         dispatchEvent('userLogged', { type: 'error', message: 'Usuario no registrado'}, loginForm)
     } finally {
-       // dispatchEvent('finishLogin', null, loginForm)
+        dispatchEvent('finishLogin', null, loginForm)
     }
 }
 

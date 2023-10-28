@@ -13,7 +13,7 @@ export const signupController = (signupForm) => {
         const passwordConfirmation = signupForm.querySelector('#password-confirm')
         
         try {
-            //dispatchEvent('startSignup', null, signupForm)
+            dispatchEvent('startSignup', null, signupForm)
             if (isFormValid(email, password, passwordConfirmation)) {
                 await createUser(email.value, password.value)
                 const data = {
@@ -30,7 +30,7 @@ export const signupController = (signupForm) => {
                 }
                 dispatchEvent('userCreated', data, signupForm)
         } finally {
-            //dispatchEvent('finishSignup', null, signupForm)
+            dispatchEvent('finishSignup', null, signupForm)
         }
     })
 
