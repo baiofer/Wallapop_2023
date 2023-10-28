@@ -1,4 +1,4 @@
-import { notificationsController } from './notofications/notificationsController.js'
+import { notificationsController } from './notifications/notificationsController.js'
 import { productListController } from './productList/productListController.js'
 
 const notifications = document.querySelector('#notifications')
