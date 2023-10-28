@@ -17,7 +17,7 @@ const submitLogin = async (loginForm) => {
         const token = await loginUser(email, password)
         localStorage.setItem('token', token)
         dispatchEvent('userLogged', { type: 'success', message: 'Acceso correcto'}, loginForm)
-        //window.location = './index.html'
+        window.location = './index.html'
     } catch (error) {
         dispatchEvent('userLogged', { type: 'error', message: 'Usuario no registrado'}, loginForm)
     } finally {
