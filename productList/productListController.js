@@ -1,8 +1,13 @@
 import { buildProduct } from "./productListView.js"
 import { getProducts } from "./productListModel.js"
+import { dispatchEvent } from "../utils/dispatchEvent.js"
+
 
 export const productListController = async (productList) => {
-    const products = await getProducts()
+    productList.innerHTML = ''
+    let products
+    products = await getProducts()
+    dispatchEvent('productsLoaded', { type: "success", message: "Se han cargado los productos." }, productList)
     renderProducts(products, productList)
 }
 
