@@ -12,3 +12,7 @@ export const buildProduct = (product) => {
     ` 
     return newDiv 
 }
+
+export const emptyProducts = () => {
+    return '<h3>No hay productos disponibles, disculpa las molestias</h3>'
+}
