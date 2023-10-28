@@ -41,3 +41,8 @@ h1 {
     height: 200px;
     object-fit: content;
 }
+
+.product a {
+    text-decoration: none;
+    color: rgb(16, 160, 112);
+  }
