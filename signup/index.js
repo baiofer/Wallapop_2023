@@ -1,5 +1,5 @@
 import { signupController } from "./signupController.js"
-import { notificationsController } from "../notofications/notificationsController.js"
+import { notificationsController } from "../notifications/notificationsController.js"
 //import { loaderController } from "../loader/loaderController.js"
 
 
