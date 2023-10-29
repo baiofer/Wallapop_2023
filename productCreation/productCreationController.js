@@ -13,6 +13,7 @@ export const productCreationController = (productCreation) => {
             sale: formData.get('sale'),
             tags: [formData.get('tags')],
             description: formData.get('description'),
+            image: formData.get('image')
         }
         try {
             dispatchEvent('startCreateProduct', null, productCreation)
