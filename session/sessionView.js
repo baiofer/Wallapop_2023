@@ -12,5 +12,7 @@ export const buildUnauthorizedSession = () => {
 }
 
 export const buildAuthenticatedSession = () => {
-    return `<button>Cerrar sesión</button>`
+    return `<button id="logoutButton">Cerrar sesión</button>
+            <button id="createProductButton">Crear producto</button>
+    `
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creacción de producto</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="productCreation.css">
+    <link rel="stylesheet" href="./notifications/notifications.css">
+</head>
+<body>
+
+    <h1>Creaccion de producto</h1>
+
+    <section id="notifications"></section>
+    
+    <form id="productCreation">
+        <div class="form__element">
+            <label for="productName">Nombre del producto</label>
+            <input type="text" name="productName" id="productName" required>
+        </div>
+        <br>
+        <div class="form__element">
+            <label for="price">Precio</label>
+            <input type="text" name="price" id="price" required>
+        </div>
+        <br>
+        <div class="form__element">
+            <label for="sale">Tipo</label>
+            <input list="listOfTypes" id="sale" name="sale" required/>
+            <datalist id="listOfTypes">
+                <option value="Venta"></option>
+                <option value="Compra"></option>
+            </datalist>
+        </div>
+        <br>
+        <div class="form__element">
+            <label for="tags"> Categorías</label>
+            <input list="listOfTags" name="tags" id="tags" required/>
+            <datalist id="listOfTags">
+                <option value="Lifestyle"></option>
+                <option value="Mobile"></option>
+                <option value="Motor"></option>
+                <option value="Work"></option>
+            </datalist>
+        </div>
+        <br>
+        <div class="form__element">
+            <label for="description">Descripción</label>
+            <textarea name="description" id="description" cols="30" rows="10" required></textarea>
+        </div>
+        <button type="submit">Crear Producto</button>
+    </form>
+
+    <script type="module" src="./productCreation/index.js"></script>
+</body>
+</html>
