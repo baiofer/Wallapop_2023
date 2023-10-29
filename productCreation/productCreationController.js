@@ -15,6 +15,7 @@ export const productCreationController = (productCreation) => {
             description: formData.get('description'),
         }
         try {
+            dispatchEvent('startCreateProduct', null, productCreation)
             await createProduct(data)
             dispatchEvent('productCreated', { type: 'success', message: 'Producto creado correctamente' }, productCreation)
             setTimeout(() => {
@@ -22,6 +23,8 @@ export const productCreationController = (productCreation) => {
             }, 2000)
         } catch (error) {
             dispatchEvent('productCreated', { type: 'error', message: error }, productCreation)
+        } finally {
+            dispatchEvent('finishCreateProduct', null, productCreation)
         }
     })
 }
