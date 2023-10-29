@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "username": "fjarilla@gmail.com",
+      "password": "$2b$10$rkfsm2TeexGU2huBSRNpq.3xce3qX.HSbVCV9B/4matSTRBDlXVae",
+      "id": 1
+    },
+    {
+      "username": "usuario1@gmail.com",
+      "password": "$2b$10$rkfsm2TeexGU2huBSRNpq.3xce3qX.HSbVCV9B/4matSTRBDlXVae",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "Máquina de escribir",
+      "price": "250",
+      "sale": "Venta",
+      "tags": [
+        "Work"
+      ],
+      "description": "Clásica máquina de escribir en perfecto estado de funcionamiento. Bien cuidada. Tiene su estuche para guardarla",
+      "image": "https://cdn.pixabay.com/photo/2016/04/09/05/01/poet-1317444_1280.jpg",
+      "userId": 1,
+      "updatedAt": "2023-10-29T18:45:38.719Z",
+      "id": 1
+    },
+    {
+      "name": "Cámara de fotos vintage",
+      "price": "50",
+      "sale": "Venta",
+      "tags": [
+        "Work"
+      ],
+      "description": "Cámara de fotos en perfecto estado de funcionamiento. ",
+      "image": "https://cdn.pixabay.com/photo/2019/03/19/17/33/camera-4066340_1280.jpg",
+      "userId": 1,
+      "updatedAt": "2023-10-29T18:49:27.023Z",
+      "id": 2
+    },
+    {
+      "name": "Medidor de tensión portátil",
+      "price": "100",
+      "sale": "Venta",
+      "tags": [
+        "Lifestyle"
+      ],
+      "description": "",
+      "image": "https://cdn.pixabay.com/photo/2018/06/11/01/09/blood-pressure-monitor-3467664_1280.jpg",
+      "userId": 1,
+      "updatedAt": "2023-10-29T18:51:24.213Z",
+      "id": 3
+    },
+    {
+      "name": "Ordenador portátil",
+      "price": "200",
+      "sale": "Compra",
+      "tags": [
+        "Work"
+      ],
+      "description": "Busco un ordenador MAC Air aunque sea un modelo obsoleto, pero que funcione.",
+      "image": "",
+      "userId": 1,
+      "updatedAt": "2023-10-29T18:52:38.650Z",
+      "id": 4
+    },
+    {
+      "name": "Motocicleta",
+      "price": "400",
+      "sale": "Venta",
+      "tags": [
+        "Motor"
+      ],
+      "description": "",
+      "image": "https://cdn.pixabay.com/photo/2019/02/27/22/43/scooter-4025114_1280.jpg",
+      "userId": 1,
+      "updatedAt": "2023-10-29T18:58:45.608Z",
+      "id": 5
+    },
+    {
+      "name": "Reloj de cocina",
+      "price": "30",
+      "sale": "Venta",
+      "tags": [
+        "Lifestyle"
+      ],
+      "description": "Bonito reloj de cocina. Funciona a pilas",
+      "image": "https://cdn.pixabay.com/photo/2017/06/19/14/17/tray-2419460_1280.jpg",
+      "userId": 1,
+      "updatedAt": "2023-10-29T19:02:14.610Z",
+      "id": 6
+    },
+    {
+      "name": "Silla",
+      "price": "50",
+      "sale": "Venta",
+      "tags": [
+        "Lifestyle"
+      ],
+      "description": "Muy cómoda",
+      "image": "https://cdn.pixabay.com/photo/2017/08/06/01/49/table-2587598_1280.jpg",
+      "userId": 1,
+      "updatedAt": "2023-10-29T19:02:43.466Z",
+      "id": 7
+    },
+    {
+      "name": "iPhone 12",
+      "price": "300",
+      "sale": "Venta",
+      "tags": [
+        "Mobile"
+      ],
+      "description": "En perfecto estado. Se suministra con su envase original y el cable de carga.",
+      "image": "https://cdn.pixabay.com/photo/2021/01/03/02/24/iphone-12-pro-5883473_1280.jpg",
+      "userId": 1,
+      "updatedAt": "2023-10-29T19:03:45.929Z",
+      "id": 8
+    }
+  ]
+}
