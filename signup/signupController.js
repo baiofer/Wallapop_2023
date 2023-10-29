@@ -8,14 +8,15 @@ export const signupController = (signupForm) => {
         event.preventDefault()
 
         // Extraer datos del formulario
-        const email = signupForm.querySelector('#email')
-        const password = signupForm.querySelector('#password')
-        const passwordConfirmation = signupForm.querySelector('#password-confirm')
+        const formData = new FormData(signupForm)
+        const email = formData.get("email")
+        const password = formData.get("password")
+        const passwordConfirmation = formData.get("password-confirm")
         
         try {
             dispatchEvent('startSignup', null, signupForm)
             if (isFormValid(email, password, passwordConfirmation)) {
-                await createUser(email.value, password.value)
+                await createUser(email, password)
                 const data = {
                     type: 'success',
                     message: 'Usuario creado correctamente'
@@ -47,7 +48,7 @@ const isFormValid = (email, password, passwordConfirmation) => {
 const isEmailValid = (email) => {
     const emailRegExp = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)
     let result = true
-    if (!emailRegExp.test(email.value)) {
+    if (!emailRegExp.test(email)) {
         throw 'El email no es correcto'
     }
     return result
@@ -55,7 +56,7 @@ const isEmailValid = (email) => {
 
 const isPasswordValid = (password, passwordConfirmation) => {
     let result = true
-    if (password.value !== passwordConfirmation.value) {
+    if (password !== passwordConfirmation) {
         throw 'Las contraseñas no son iguales'
     }
     return result
