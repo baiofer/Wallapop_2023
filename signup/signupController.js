@@ -23,7 +23,7 @@ export const signupController = (signupForm) => {
                 }
                 dispatchEvent('userCreated', data, signupForm)
                 setTimeout(() => {
-                    window.location = './index.html'
+                    window.location = './login.html'
                 }, 2000)
             }
         } catch (error) {

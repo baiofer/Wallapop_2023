@@ -6,7 +6,7 @@ export const buildProductDetail = (product) => {
                 <h2>${product.name}</h3>
                 <h4>Precio: ${product.price}€</h4>
                 <p class="title">Tipo: </p>
-                <p class="type">${product.sale ? 'venta' : 'compra'}</p>
+                <p class="type">${product.sale === 'Venta' ? 'Venta' : 'Compra'}</p>
                 <p class="title">Categorias: </p>
                 <p class="tags">${product.tags.join(', ')}</p>
                 <p class="title">Descripción:</p>
