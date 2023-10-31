@@ -1,11 +1,9 @@
+import { sparrestApi } from "../utils/sparrestApi.js"
+
 export const getProducts = async () => {
-    const url = 'http://localhost:8000/api/products'
-    let productsList = []
-    try {
-        const response = await fetch(url)
-        productsList = await response.json()
-    } catch (error) {
-        throw error
-    }
+    //const url = 'http://localhost:8000/api/products'
+    
+    const  productsList = await sparrestApi().get('api/products')
+    
     return productsList
 }

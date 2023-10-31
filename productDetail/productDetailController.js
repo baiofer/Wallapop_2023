@@ -41,9 +41,7 @@ const addDeleteProductButton = (product, productDetail) => {
     deleteButton.addEventListener('click', async() => {
         if (confirm('¿Seguro que quieres borrar el producto?')) {
             await deleteProduct(product.id)
-            setTimeout(() => {
-                window.location = '../index.html'
-            }, 2000)
+            window.location = '../index.html'
         }
     })
 
